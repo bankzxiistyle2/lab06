@@ -1,0 +1,19 @@
+{
+    "remotePath": "/angsila.cs.buu.ac.th/~58660033/887371/lab06/",
+    "host": "angsila.cs.buu.ac.th",
+    "username": "58660033",
+    "password": "muangmit0",
+    "port": 22,
+    "secure": false,
+    "protocol": "sftp",
+    "uploadOnSave": false,
+    "passive": false,
+    "debug": false,
+    "privateKeyPath": null,
+    "passphrase": null,
+    "ignore": [
+        "\\.vscode",
+        "\\.git",
+        "\\.DS_Store"
+    ]
+}
