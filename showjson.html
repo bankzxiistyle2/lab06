@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Show JSON</title>
+        <script type="application/javascript">
+        function loadJSON(){
+            var http_request = new XMLHttpRequest();
+            http_request.onreadystatechange = function(){
+                //if(http_request.readyState == 4){
+                    //var jsonObj = JSON.parse(http_request.responseText);
+    
+                    document.getElementById("Title").innerHTML = jsonObj.title;
+                    document.getElementById("Publisher").innerHTML = jsonObj.publisher;
+                    document.getElementById("Author").innerHTML = jsonObj.author;
+                    document.getElementById("Cover").innerHTML = jsonObj.cover;
+                    document.getElementById("Blurb").innerHTML = jsonObj.blurb;
+                    
+                //}
+            }
+            http_request.open("GET","http://angsila.cs.buu.ac.th/~wittawas/592/887371/labs/get_json.php",true);
+            http_request.send();
+        }
+        loadJSON();
+        </script>
+    </head>
+    <body>
+        <div id ="Title">Change this text</div>        
+        <div id ="Publisher"></div>        
+        <div id ="Author"></div>        
+        <div id ="Cover"></div>        
+        <div id ="Blurb"></div>        
+        <dir class = "central">
+            <button type="button" onclick = "loadJSON()">Update Details </button>
+        </dir>
+        
+    </body>
+</html>
